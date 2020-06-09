@@ -1,0 +1,160 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.registrant.field_access_reason
+    - field.field.node.registrant.field_additional_comments
+    - field.field.node.registrant.field_age_range
+    - field.field.node.registrant.field_approval_status
+    - field.field.node.registrant.field_country
+    - field.field.node.registrant.field_email
+    - field.field.node.registrant.field_email_type
+    - field.field.node.registrant.field_first_name
+    - field.field.node.registrant.field_gender
+    - field.field.node.registrant.field_last_name
+    - field.field.node.registrant.field_profession
+    - field.field.node.registrant.field_telephone
+    - field.field.node.registrant.field_upload
+    - node.type.registrant
+  module:
+    - countries_field
+    - ds
+    - field_layout
+    - file
+    - telephone
+third_party_settings:
+  field_layout:
+    id: ds_3col_equal_width
+    settings:
+      label: ''
+      wrappers:
+        left: div
+        middle: div
+        right: div
+      outer_wrapper: div
+      attributes: ''
+      link_attribute: ''
+      link_custom: ''
+      classes:
+        layout_class: {  }
+id: node.registrant.default
+targetEntityType: node
+bundle: registrant
+mode: default
+content:
+  field_access_reason:
+    weight: 30
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: left
+  field_additional_comments:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: left
+  field_age_range:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: left
+  field_approval_status:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: left
+  field_country:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: country_default
+    region: middle
+  field_email:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: right
+  field_email_type:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: left
+  field_first_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: left
+  field_gender:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: left
+  field_last_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: left
+  field_profession:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: middle
+  field_telephone:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: right
+  field_upload:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: left
+  title:
+    type: string_textfield
+    weight: 2
+    region: left
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

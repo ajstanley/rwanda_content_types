@@ -1,0 +1,179 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.registrant.field_access_reason
+    - field.field.node.registrant.field_additional_comments
+    - field.field.node.registrant.field_age_range
+    - field.field.node.registrant.field_approval_status
+    - field.field.node.registrant.field_country
+    - field.field.node.registrant.field_email
+    - field.field.node.registrant.field_email_type
+    - field.field.node.registrant.field_first_name
+    - field.field.node.registrant.field_gender
+    - field.field.node.registrant.field_last_name
+    - field.field.node.registrant.field_profession
+    - field.field.node.registrant.field_telephone
+    - field.field.node.registrant.field_upload
+    - node.type.registrant
+  module:
+    - countries_field
+    - ds
+    - file
+    - telephone
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_threecol_33_34_33
+      library: layout_discovery/threecol_33_34_33
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      first:
+        - field_first_name
+        - field_last_name
+        - field_age_range
+        - field_gender
+      second:
+        - field_country
+        - field_profession
+        - field_email_type
+        - field_access_reason
+      third:
+        - field_telephone
+        - field_email
+        - field_upload
+        - field_additional_comments
+        - langcode
+id: node.registrant.default
+targetEntityType: node
+bundle: registrant
+mode: default
+content:
+  field_access_reason:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: second
+  field_additional_comments:
+    weight: 11
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: third
+  field_age_range:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: first
+  field_approval_status:
+    weight: 13
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_country:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: country_default
+    region: second
+  field_email:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: third
+  field_email_type:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: second
+  field_first_name:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: first
+  field_gender:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: first
+  field_last_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: first
+  field_profession:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: second
+  field_telephone:
+    weight: 8
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: third
+  field_upload:
+    weight: 10
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: third
+  langcode:
+    type: language
+    weight: 12
+    region: third
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+hidden:
+  display_media_entity_view_1: true
+  display_media_entity_view_2: true
+  display_media_service_file: true
+  display_media_thumbnail: true
+  links: true
+  openseadragon_media_evas_entity_view_1: true
+  openseadragon_media_evas_entity_view_2: true
+  openseadragon_media_evas_service_file: true
+  pdfjs_media_evas_entity_view_1: true
+  pdfjs_media_evas_entity_view_2: true
+  pdfjs_media_evas_service_file: true
+  search_api_excerpt: true

@@ -1,0 +1,17 @@
+name: 'Rwanda Content Types'
+description: 'Content types for Aegus project'
+type: module
+core: 8.x
+dependencies:
+  - countries_field
+  - ds
+  - field
+  - field_layout
+  - field_permissions
+  - file
+  - islandora_defaults
+  - language
+  - node
+  - rwanda
+  - telephone
+  - user
