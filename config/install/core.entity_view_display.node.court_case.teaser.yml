@@ -1,0 +1,113 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.court_case.field_accomplices
+    - field.field.node.court_case.field_accused
+    - field.field.node.court_case.field_court_of_appeal
+    - field.field.node.court_case.field_court_of_cell
+    - field.field.node.court_case.field_court_of_sector
+    - field.field.node.court_case.field_crime
+    - field.field.node.court_case.field_decision
+    - field.field.node.court_case.field_district
+    - field.field.node.court_case.field_general_assembly
+    - field.field.node.court_case.field_observer_name
+    - field.field.node.court_case.field_outcome
+    - field.field.node.court_case.field_plaintiff
+    - field.field.node.court_case.field_properties_destroyed
+    - field.field.node.court_case.field_register_number
+    - field.field.node.court_case.field_sector
+    - field.field.node.court_case.field_sentence
+    - field.field.node.court_case.field_trial_date
+    - field.field.node.court_case.field_trial_level
+    - field.field.node.court_case.field_trial_location
+    - field.field.node.court_case.field_trial_stage
+    - field.field.node.court_case.field_witnesses
+    - node.type.court_case
+  module:
+    - user
+id: node.court_case.teaser
+targetEntityType: node
+bundle: court_case
+mode: teaser
+content:
+  display_media_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_thumbnail:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  openseadragon_media_evas_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  openseadragon_media_evas_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  openseadragon_media_evas_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_accomplices: true
+  field_accused: true
+  field_court_of_appeal: true
+  field_court_of_cell: true
+  field_court_of_sector: true
+  field_crime: true
+  field_decision: true
+  field_district: true
+  field_general_assembly: true
+  field_observer_name: true
+  field_outcome: true
+  field_plaintiff: true
+  field_properties_destroyed: true
+  field_register_number: true
+  field_sector: true
+  field_sentence: true
+  field_trial_date: true
+  field_trial_level: true
+  field_trial_location: true
+  field_trial_stage: true
+  field_witnesses: true
+  langcode: true
+  search_api_excerpt: true

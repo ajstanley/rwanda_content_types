@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_citizenship
+    - node.type.person
+  module:
+    - countries_field
+id: node.person.field_citizenship
+field_name: field_citizenship
+entity_type: node
+bundle: person
+label: Citizenship
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: rw
+default_value_callback: ''
+settings: {  }
+field_type: country

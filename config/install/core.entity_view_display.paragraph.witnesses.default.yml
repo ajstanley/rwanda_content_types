@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.witnesses.field_witness
+    - field.field.paragraph.witnesses.field_witness_
+    - paragraphs.paragraphs_type.witnesses
+  module:
+    - options
+id: paragraph.witnesses.default
+targetEntityType: paragraph
+bundle: witnesses
+mode: default
+content:
+  field_witness:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_witness_:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  search_api_excerpt: true

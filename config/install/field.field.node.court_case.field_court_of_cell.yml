@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_court_of_cell
+    - node.type.court_case
+    - taxonomy.vocabulary.court_of_cell
+id: node.court_case.field_court_of_cell
+field_name: field_court_of_cell
+entity_type: node
+bundle: court_case
+label: 'Court of Cell'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      court_of_cell: court_of_cell
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

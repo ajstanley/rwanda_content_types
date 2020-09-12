@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_witnesses
+    - node.type.court_case
+    - paragraphs.paragraphs_type.witnesses
+  module:
+    - entity_reference_revisions
+id: node.court_case.field_witnesses
+field_name: field_witnesses
+entity_type: node
+bundle: court_case
+label: Witnesses
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      witnesses: witnesses
+    target_bundles_drag_drop:
+      witnesses:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

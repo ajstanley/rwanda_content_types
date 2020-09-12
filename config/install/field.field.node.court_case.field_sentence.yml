@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sentence
+    - node.type.court_case
+  module:
+    - options
+id: node.court_case.field_sentence
+field_name: field_sentence
+entity_type: node
+bundle: court_case
+label: Sentence
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

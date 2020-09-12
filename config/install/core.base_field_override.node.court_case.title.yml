@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.court_case
+id: node.court_case.title
+field_name: title
+entity_type: node
+bundle: court_case
+label: 'Box Number'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

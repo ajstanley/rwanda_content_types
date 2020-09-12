@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_witness_
+    - paragraphs.paragraphs_type.witnesses
+  module:
+    - options
+id: paragraph.witnesses.field_witness_
+field_name: field_witness_
+entity_type: paragraph
+bundle: witnesses
+label: 'Witness Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
